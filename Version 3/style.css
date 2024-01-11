@@ -1,0 +1,365 @@
+/*
+Theme Name: Open House JCUS
+Theme URI: 
+Author: Group 2
+Author URI: 
+Description:  Open House Website Theme for JCU Singapore
+Tags:
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Text Domain: Open House JCUS
+*/
+
+
+/*
+Header
+ */
+
+ .header-image {
+  max-height: 60vh;
+  overflow: hidden;
+}
+
+.header-image img {
+  display: block;
+  width: 100vw;
+}
+
+.site-header {
+  position: relative;
+  padding: 1em;
+  font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: #000000;
+  background-color: #1a61cb;
+}
+
+@media screen and (min-width: 600px) {
+  .site-header {
+      padding: 1em 2em;
+  }
+}
+
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 65px;
+}
+
+.custom-logo-link {
+  margin-right: 1em;
+}
+
+.custom-logo-link img {
+  display: block;
+  height: 65px;
+  width: auto;
+}
+
+.site-branding__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 65px;
+}
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1em;
+}
+
+.site-title a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.site-title a:hover, .site-title a:focus {
+  text-decoration: underline;
+}
+
+.site-description {
+  margin: 0;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 900px) {
+  .site-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+  }
+  .site-branding {
+      width: 35%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+  }
+  .site-navigation {
+      width: 55%;
+  }
+}
+
+/*
+Header Menu
+*/
+.main-navigation {
+  display: block;
+  font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-weight: 400;
+  clear: left;
+}
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  display: none;
+  top: 1.5em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  top: 0;
+}
+
+.main-navigation ul ul li {
+  padding-left: 1em;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: inline-block;
+  width: 100%;
+  padding: .5em 1em .5em 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  text-decoration: underline;
+}
+
+.main-navigation .menu-item-has-children,
+.main-navigation .page_item_has_children {
+  min-width: 218px;
+}
+
+.main-navigation .menu-item-has-children > a,
+.main-navigation .page_item_has_children > a {
+  padding-right: 2em;
+}
+
+button.dropdown-toggle {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: inherit;
+  color: white;
+  line-height: 1.5em;
+  padding: .4em 1em .4em .5em;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 1.2em 1.2em 0 0;
+  padding: .6em .8em;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Toggle small menu and children on */
+.toggled-on ul,
+.sub-menu.toggled-on {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .menu-toggle {
+      display: none;
+  }
+  .main-navigation .menu-item-has-children > a,
+  .main-navigation .page_item_has_children > a {
+      padding-right: 2em;
+      background: rgba(255, 255, 255, 0.1);
+  }
+  .main-navigation ul {
+      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  }
+  .main-navigation ul ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.1);
+      margin-left: 0;
+  }
+  .main-navigation ul ul li {
+      padding-left: 0;
+  }
+  .main-navigation ul ul li a {
+      width: 218px;
+      background: none;
+  }
+  .main-navigation ul li a {
+      padding: .4em 1em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-navigation ul {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-top: 0;
+      /* If you want dropdowns to open on hover, uncomment this: */
+      /*
+          li:hover > ul,
+              li:focus > ul {
+              display: block;
+          }
+          */
+  }
+}
+
+/*
+Footer
+*/
+
+.site-footer {
+  position: relative;
+  padding: 1em;
+  font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: #000000;
+  background-color: #1a61cb;
+  text-align: center;
+  bottom: 0;
+}
+
+.site-footer a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer a:hover, .site-footer a:focus {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .site-footer {
+      padding: 1em 2em;
+  }
+}
+
+.site-footer__wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  .site-footer__wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+  }
+}
+
+.site-info {
+  margin: 1em 0 1em auto;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 900px) {
+  .site-info {
+      text-align: right;
+  }
+  .site-info span {
+      display: block;
+  }
+}
+
+.social-menu {
+  margin: 1em 0;
+}
+
+.social-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-menu ul a {
+  display: block;
+  padding: .5em 1em;
+  color: white;
+  text-decoration: none;
+  opacity: .6;
+}
+
+.social-menu ul a:hover, .social-menu ul a:focus {
+  text-decoration: underline;
+  opacity: 1;
+}
+

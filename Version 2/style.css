@@ -1,0 +1,92 @@
+/*
+Theme Name: Open House JCUS
+Author: Group 2
+Author URI: 
+Description:  Open House Website Theme for JCU Singapore
+Version: 1.0
+Text Domain: Open House JCUS
+*/
+
+/**
+ Header
+ */
+
+ .header-image {
+    max-height: 60vh;
+    overflow: hidden;
+}
+
+.header-image img {
+    display: block;
+    width: 100vw;
+}
+
+.site-header {
+    position: relative;
+    padding: 1em;
+    font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    color: #000000;
+    background-color: #89CFF0;
+}
+
+
+
+/*
+Header Menu
+*/
+.main-navigation {
+    display: block;
+    font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 400;
+    clear: left;
+}
+
+.main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 0;
+}
+
+.main-navigation li {
+    position: relative;
+}
+
+.main-navigation a {
+    display: inline-block;
+    width: 100%;
+    padding: .5em 1em .5em 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    text-decoration: underline;
+}
+
+
+/**
+ Footer
+ */
+
+ .site-footer {
+    position: relative;
+    padding: 1em;
+    font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    color: #000000;
+    background-color: #89CFF0;
+    text-align: center;
+    bottom: 0;
+}
+
+.site-footer a {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer a:hover, .site-footer a:focus {
+    text-decoration: underline;
+}
